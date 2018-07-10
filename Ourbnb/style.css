@@ -1,0 +1,41 @@
+body{
+	margin: 0;
+background-color: #F9FBFD;
+font-family: 'Raleway'; sans-serif;
+font-weight: 300;
+color: #222;
+}
+.site_wrap{ background-color: #fff;
+width: 100%;
+max-width: 75rem
+margin: 2rem auto;
+border: 1px solid #84BDF0;
+box-sizing: border-box;
+}
+header {min-height: 11rem
+display: grid;
+grid-template-columns: 22rem auto;
+border-bottom: 1px solid #7BBFFB;
+}
+.site_title{
+	font-weight:400;
+font-family: 'Poiret One', sans-serif;
+	font-size: 5rem;
+	color: #595C5E;
+	line-height:11rem;
+	margin:0 0 0 3rem;
+
+}
+nav a {
+font-size: 1.25rem;
+color: #595C5E;
+text-decoration: none;
+display: inline-block;
+height: 11rem;
+margin-left: 3rem;
+border-bottom: 4px  solid #fff;
+
+}
+nav a:hover, nav a.active {color: #4793D5;
+border-bottom: 4px solid #7BBFFB;
+}
