@@ -12,6 +12,16 @@ background-color: #CEC9B6;
 border-color: #D8D4C3;
 box-shadow:0.625rem 0.625rem rgba(58,89,87,0.5);
 }
+.col_01 {width: 62.5%;
+float: left;}
+
+.col_01 > : first-child {
+	margin-top:0;
+} 
+.col_02 {width: 37.5%;
+float: right;padding-left: 5rem;box-sizing:border-box;}
+
+
 .image_frame {
 box-sizing:border-box;
 padding:0.85rem;
@@ -30,7 +40,9 @@ body{
 	font-weight: 450;
     line-height: 1.618;
 }
+a, a:link, a:visited {color: #864200;}
 
+a:hover, a:active {color: #34918F;}
 
 
 h1{font-weight: 900;font-size:3.3rem; 

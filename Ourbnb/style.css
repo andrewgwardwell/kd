@@ -39,3 +39,59 @@ border-bottom: 4px  solid #fff;
 nav a:hover, nav a.active {color: #4793D5;
 border-bottom: 4px solid #7BBFFB;
 }
+svg {
+	stroke: #7BBFFB;
+	stroke-width:5;
+	margin-right: 1rem;
+	vertical-align: middle;
+}
+.open_menu{
+	position: absolute;
+	top:0;
+	left:0;
+	opacity:0;
+}
+.burger{
+	display:none;
+	font-size: 1.25rem;
+	padding: 0 3rem;
+	height:3.5rem;
+	line-height:3.5em;
+	border-top:1px solid #77BBFFB;
+	cursor: pointer;
+}
+media (max-width:75rem){
+
+	.site_wrap {margin: 0;{
+header {grid-template-columns: 100%;}
+
+.site_title {
+	text-align: center;
+	margin:0
+}
+nav {text-align:left;
+padding: 0 3rem;}
+}
+
+nav a{display: block;
+margin:0
+height: 3.5em;
+line-height: 3.5em;
+}
+.burger{
+	display: block;
+}
+.open_menu + .burger + nav{
+	display:none;
+	height:0;
+}
+.open_menu:checked + .burger {
+	background: #4793D5;
+	color:FFF;
+
+}
+.open_menu:checked + .burger + nav{
+	display:block;
+	height: auto;
+}
+}
