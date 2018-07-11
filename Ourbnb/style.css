@@ -12,19 +12,23 @@ margin: 2rem auto;
 border: 1px solid #84BDF0;
 box-sizing: border-box;
 }
-header {min-height: 11rem
+header {min-height: 11rem;
 display: grid;
 grid-template-columns: 22rem auto;
 border-bottom: 1px solid #7BBFFB;
 }
 .site_title{
-	font-weight:400;
+	font-weight: 400;
 font-family: 'Poiret One', sans-serif;
 	font-size: 5rem;
 	color: #595C5E;
 	line-height:11rem;
 	margin:0 0 0 3rem;
 
+}
+
+nav { text-align: right;
+margin: 0 3rem 0 0;
 }
 nav a {
 font-size: 1.25rem;
@@ -52,7 +56,7 @@ svg {
 	opacity:0;
 }
 .burger{
-	display:none;
+	display: none;
 	font-size: 1.25rem;
 	padding: 0 3rem;
 	height:3.5rem;
@@ -60,38 +64,45 @@ svg {
 	border-top:1px solid #77BBFFB;
 	cursor: pointer;
 }
-media (max-width:75rem){
+@media (max-width: 75rem){
 
-	.site_wrap {margin: 0;{
-header {grid-template-columns: 100%;}
+	 .site_wrap {
+		 margin: 0;
+	 }
+ header {grid-template-columns: 100%;}
 
-.site_title {
-	text-align: center;
-	margin:0
-}
-nav {text-align:left;
-padding: 0 3rem;}
-}
+ .site_title {
+	 text-align: center;
+	 margin:0
+ }
+ nav {
+	 text-align: left;
+ padding: 0 3rem;}
 
-nav a{display: block;
-margin:0
-height: 3.5em;
-line-height: 3.5em;
-}
-.burger{
-	display: block;
-}
-.open_menu + .burger + nav{
-	display:none;
-	height:0;
-}
-.open_menu:checked + .burger {
-	background: #4793D5;
-	color:FFF;
 
-}
-.open_menu:checked + .burger + nav{
-	display:block;
-	height: auto;
-}
+ nav a{display: block;
+ margin:0
+ height: 3.5em;
+ line-height: 3.5em;
+ }
+ .burger{
+	 display: block;
+ }
+ .open_menu + .burger + nav{
+	 display: none;
+	 height:0;
+ }
+ .open_menu:checked + .burger {
+	 background: #4793D5;
+	 color:FFF;
+
+ }
+ .open_menu:checked + .burger + nav{
+	 display: block;
+	 height: auto;
+ }
+ .open_menu:checked + .burger svg {
+	 stroke: #fff;
+ }
+
 }
