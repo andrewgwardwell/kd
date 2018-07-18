@@ -64,6 +64,21 @@ svg {
 	border-top:1px solid #77BBFFB;
 	cursor: pointer;
 }
+
+main {min-height: 5rem;
+}
+
+footer{
+	height: 7rem;
+	background-color: #1C3B81;
+	border-top: 1px solid #7BBFFB;
+	text-align: center;
+	color: white;
+}
+footer p {
+	line-height: 7rem;
+	margin: 0;
+}
 @media (max-width: 75rem){
 
 	 .site_wrap {
@@ -103,6 +118,19 @@ svg {
  }
  .open_menu:checked + .burger svg {
 	 stroke: #fff;
+ }
+
+}
+
+@media (max-width: 22rem){
+.burger { font-size: 6vw;
+padding: 0 2rem;
+}
+nav {padding: 0 2rem;}
+
+ nav a {font-size: 6vw;}
+ .site_title {
+	 font-size: 20vw;
  }
 
 }
